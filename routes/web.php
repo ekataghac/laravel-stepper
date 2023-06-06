@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 Route::view('/requestor','requestor')->name('requestor');
 Route::view('/registration-success','registration-success')->name('registration-success');
+
+Route::view('/nav','nav\navigation')->name('nav');

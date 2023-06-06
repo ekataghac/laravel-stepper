@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Success</title>
     <link rel="stylesheet" href="{{asset('bootstrap.css')}}">
+
 </head>
 <body class="d-flex justify-content-center p-4 pt-4">
     <div class="card">

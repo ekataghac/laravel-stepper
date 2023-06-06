@@ -4,17 +4,22 @@
 
         @if($currentStep == 1 )
         <div class="step-one">
+            <div class="card">
+                <div class="card-header bg-secondary text-white"> Intro </div>
                 <div class="card-body">
                     <div class="row">
                         Bye
                     </div>
                 </div>
+            </div>
         </div>
         @endif
 
         {{-- Step 2 --}}
         @if($currentStep == 2 )
         <div class="step-two">
+            <div class="card">
+                <div class="card-header bg-secondary text-white"> Disclosures </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="form-group">
@@ -27,12 +32,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         @endif
 
         {{-- Step 3 --}}
         @if($currentStep == 3 )
         <div class="step-three">
+            <div class="card">
+                <div class="card-header bg-secondary text-white"> Requestor </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
@@ -83,28 +91,34 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
         </div>
         @endif
 
         {{-- Step 4 --}}
         @if($currentStep == 4 )
         <div class="step-four">
+            <div class="card">
+                <div class="card-header bg-secondary text-white"> Subject </div>
                 <div class="card-body">
                     <div class="row">
                         Subject
                     </div>
                 </div>
+            </div>
         </div>
         @endif
         
         {{-- Step 5 --}}
         @if($currentStep == 5 )
         <div class="step-five">
+            <div class="card">
+                <div class="card-header bg-secondary text-white"> Review </div>
                 <div class="card-body">
                     <div class="row">
                         Review
                     </div>
+                </div>
             </div>
         </div>
         @endif
