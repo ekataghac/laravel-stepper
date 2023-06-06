@@ -6,7 +6,7 @@
         <div class="step-one">
                 <div class="card-body">
                     <div class="row">
-                        Bye
+                        You can click on the next option
                     </div>
                 </div>
         </div>
