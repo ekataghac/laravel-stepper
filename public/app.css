@@ -1,0 +1,10 @@
+.selectCss {
+    border-top: 1px solid rgb(186, 185, 185) !important;
+    border-bottom: 1px solid rgb(186, 185, 185) !important;
+    border-left: 1px solid rgb(186, 185, 185) !important;
+    border-right: none;
+}
+
+.inputCss {
+    border-left: none !important;
+}
