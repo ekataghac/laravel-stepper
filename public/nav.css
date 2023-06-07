@@ -73,7 +73,7 @@ nav {
 }
 
 .tick {
-    width: 15%;
+    width: 19%;
     padding-right: 5%;
 }
 .stepper__item {
@@ -86,10 +86,11 @@ nav {
 .box {
     width: auto;
     height: auto;
-    margin-left: 1%;
-    margin-right: 1%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow effect */
-    padding: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+    padding: 37px;
+    background-color: #fff !important;
 }
 
 .textcss {
@@ -103,10 +104,41 @@ nav {
 .column {
     flex: 50%;
     padding: 10px;
-    height: 400px; /* Should be removed. Only for demonstration */
+    height: 350px; /* Should be removed. Only for demonstration */
 }
 
 .imgside {
-    width: 100%;
+    width: 95%;
     padding-left: 20%;
+}
+
+#action-buttons-container {
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    padding: 0px;
+}
+
+.btncss {
+    background-color: #1386be;
+    margin-right: 0.5%;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #1386be;
+    border-color: #1386be !important;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+    box-shadow: 0 0 0 0.2rem rgb(19 134 190) !important;
+}
+
+.btn-success {
+    border-color: #1386be;
+}
+
+.action-buttons {
+    background-color: #f7f6f6 !important;
 }

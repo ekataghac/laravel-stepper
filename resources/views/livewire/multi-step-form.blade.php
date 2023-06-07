@@ -1,5 +1,6 @@
 <div>
     <form wire:submit.prevent="register">
+        @csrf
         {{-- Step 1 --}}
 
         @if($currentStep == 1 )
@@ -109,26 +110,24 @@
         </div>
         @endif
         <!-- adding actions card -->
-        <div class="action-buttons d-flex justify-content-between bg-white pt-2 pb-2">
-            @if($currentStep == 1 )
-            <div></div>
-            @endif
+        <div id="action-buttons-container">
+            <div class="action-buttons d-flex justify-content-between bg-white pt-2 pb-2">
+                @if($currentStep == 1 )
+                <div></div>
+                @endif
 
-            @if($currentStep == 2 || $currentStep == 3 ||$currentStep == 4 ||$currentStep == 5)
-            <button type= "button" class = "btn btn-sm btn-secondary" wire:click= "decreaseStep()">Back</button>
-            @endif 
+                @if($currentStep == 2 || $currentStep == 3 ||$currentStep == 4 ||$currentStep == 5)
+                <button type="button" class="btn btn-sm btn-secondary btncss" wire:click="decreaseStep()">Back</button>
+                @endif 
 
-            @if($currentStep == 1 || $currentStep == 2 ||$currentStep == 3 ||$currentStep == 4)
-            <button type= "button" class = "btn btn-sm btn-success" wire:click= "increaseStep()">Next</button>
-            @endif 
-            
+                @if($currentStep == 1 || $currentStep == 2 ||$currentStep == 3 ||$currentStep == 4)
+                <button type="button" class="btn btn-sm btn-success btncss" wire:click="increaseStep()">Next</button>
+                @endif 
 
-            @if($currentStep == 5 )
-            <button type="submit" class = "btn btn-sm btn-primary">Submit</button>
-            @endif
-            
+                @if($currentStep == 5 )
+                <button type="submit" class="btn btn-sm btn-primary btncss">Submit</button>
+                @endif
+            </div>
         </div>
-
-
     </form>
 </div>

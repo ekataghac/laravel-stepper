@@ -17,14 +17,14 @@
     <a href="#" class="nav-item active">Illinois Name Check</a>
     <a href="#" class="nav-item">Code Verifier</a>
     </nav>
-    <ul class="stepper">
+      <ul class="stepper">
         <li class="stepper__item complete"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" srcset="" > Intro
         <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" srcset="" >Disclosure</li>
         <li class="stepper__item current"><img src="{{asset('images/3-blue.png')}}" class="tick" alt="tickimg" srcset="" >Requestor</li>
         <li class="stepper__item"><img src="{{asset('images/4-grey.png')}}" class="tick" alt="tickimg" srcset="" >Subject</li>
         <li class="stepper__item"><img src="{{asset('images/5-grey.png')}}" class="tick" alt="tickimg" srcset="" >Review</li>
       </ul>
-      
+      <br>
       <div class="box">
         <p><b>Request Information</b></p>
         <p class="textcss">Contact Information for the person requesting the name check. Results will be sent to the email address below.</p><hr>
