@@ -1,5 +1,18 @@
 <div>
-    <form wire:submit.prevent="register">
+    <ul class="stepper">
+        <li class="stepper__item complete"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" srcset="" > Intro
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" srcset="" >Disclosure</li>
+        <li class="stepper__item current"><img src="{{asset('images/3-blue.png')}}" class="tick" alt="tickimg" srcset="" >Requestor</li>
+        <li class="stepper__item"><img src="{{asset('images/4-grey.png')}}" class="tick" alt="tickimg" srcset="" >Subject</li>
+        <li class="stepper__item"><img src="{{asset('images/5-grey.png')}}" class="tick" alt="tickimg" srcset="" >Review</li>
+      </ul>
+      <br>
+      <div class="box">
+        <p><b>Request Information</b></p>
+        <p class="textcss">Contact Information for the person requesting the name check. Results will be sent to the email address below.</p><hr>
+        <div class="row">
+            <div class="column">
+            <form wire:submit.prevent="register">
         @csrf
         {{-- Step 1 --}}
 
@@ -130,4 +143,11 @@
             </div>
         </div>
     </form>
+            </div>
+            <div class="column">
+              <p><img src="{{asset('images/insyc.svg')}}" alt="" srcset="" class="imgside"></p>
+            </div>
+          </div>
+      </div>
+    
 </div>
