@@ -104,14 +104,23 @@ nav {
 .column {
     flex: 50%;
     padding: 10px;
-    height: 350px; /* Should be removed. Only for demonstration */
+    height: fit-content; /* Should be removed. Only for demonstration */
 }
 
 .imgside {
-    width: 95%;
+    width: 100%;
     padding-left: 20%;
 }
-
+.imgside4 {
+    width: 100%;
+    padding-left: 20%;
+    margin-top: 20%;
+}
+.imgside5 {
+    width: 100%;
+    padding-left: 20%;
+    margin-top: 40%;
+}
 #action-buttons-container {
     position: fixed;
     bottom: 0;
