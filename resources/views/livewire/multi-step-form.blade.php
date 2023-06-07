@@ -1,10 +1,40 @@
 <div>
     <ul class="stepper">
-        <li class="stepper__item complete"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" srcset="" > Intro
-        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" srcset="" >Disclosure</li>
-        <li class="stepper__item current"><img src="{{asset('images/3-blue.png')}}" class="tick" alt="tickimg" srcset="" >Requestor</li>
-        <li class="stepper__item"><img src="{{asset('images/4-grey.png')}}" class="tick" alt="tickimg" srcset="" >Subject</li>
-        <li class="stepper__item"><img src="{{asset('images/5-grey.png')}}" class="tick" alt="tickimg" srcset="" >Review</li>
+        @if($currentStep ==1)
+        <li class="stepper__item current"><img src="{{asset('images/1-blue.png')}}" class="tick" alt="tickimg" > Intro
+        <li class="stepper__item"><img src="{{asset('images/2-grey.png')}}" class="tick" alt="tickimg" >Disclosure</li>
+        <li class="stepper__item "><img src="{{asset('images/3-grey.png')}}" class="tick" alt="tickimg" >Requestor</li>
+        <li class="stepper__item"><img src="{{asset('images/4-grey.png')}}" class="tick" alt="tickimg" >Subject</li>
+        <li class="stepper__item"><img src="{{asset('images/5-grey.png')}}" class="tick" alt="tickimg" >Review</li>
+        @endif
+        @if($currentStep == 2 )
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" > Intro
+        <li class="stepper__item current"><img src="{{asset('images/2-blue.png')}}" class="tick" alt="tickimg" >Disclosure</li>
+        <li class="stepper__item"><img src="{{asset('images/3-grey.png')}}" class="tick" alt="tickimg" >Requestor</li>
+        <li class="stepper__item"><img src="{{asset('images/4-grey.png')}}" class="tick" alt="tickimg" >Subject</li>
+        <li class="stepper__item"><img src="{{asset('images/5-grey.png')}}" class="tick" alt="tickimg" >Review</li>
+        @endif
+        @if($currentStep == 3 )
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" > Intro
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" >Disclosure</li>
+        <li class="stepper__item current"><img src="{{asset('images/3-blue.png')}}" class="tick" alt="tickimg" >Requestor</li>
+        <li class="stepper__item"><img src="{{asset('images/4-grey.png')}}" class="tick" alt="tickimg" >Subject</li>
+        <li class="stepper__item"><img src="{{asset('images/5-grey.png')}}" class="tick" alt="tickimg" >Review</li>
+        @endif
+        @if($currentStep == 4 )
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" > Intro
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" >Disclosure</li>
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" >Requestor</li>
+        <li class="stepper__item current" ><img src="{{asset('images/4-blue.png')}}" class="tick" alt="tickimg" >Subject</li>
+        <li class="stepper__item"><img src="{{asset('images/5-grey.png')}}" class="tick" alt="tickimg" >Review</li>
+        @endif
+        @if($currentStep == 5 )
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" > Intro
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" >Disclosure</li>
+        <li class="stepper__item"><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" >Requestor</li>
+        <li class="stepper__item" ><img src="{{asset('images/tick.png')}}" class="tick" alt="tickimg" >Subject</li>
+        <li class="stepper__item current"><img src="{{asset('images/5-blue.png')}}" class="tick" alt="tickimg" >Review</li>
+        @endif
       </ul>
       <br>
       <div class="box">
@@ -15,7 +45,6 @@
             <form wire:submit.prevent="register">
         @csrf
         {{-- Step 1 --}}
-
         @if($currentStep == 1 )
         <div class="step-one">
                 <div class="card-body">
@@ -145,7 +174,7 @@
     </form>
             </div>
             <div class="column">
-              <p><img src="{{asset('images/insyc.svg')}}" alt="" srcset="" class="imgside"></p>
+              <p><img src="{{asset('images/insyc.svg')}}" alt="" class="imgside"></p>
             </div>
           </div>
       </div>
