@@ -14,7 +14,7 @@
 <body>
 <nav>
     <img src="{{asset('images/logo22.png')}}" class=img alt="" srcset="">
-    <a href="#" class="nav-item active">Illinois Name Check</a>
+    <a href="{{route('requestor')}}" class="nav-item active">Illinois Name Check</a>
     <a href="#" class="nav-item">Code Verifier</a>
     </nav>
     @livewire('multi-step-form')

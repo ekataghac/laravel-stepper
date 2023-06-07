@@ -8,3 +8,8 @@
 .inputCss {
     border-left: none !important;
 }
+
+.nav-item:hover {
+    text-decoration: none;
+    color: black;
+}
